@@ -14,6 +14,10 @@ export function createAWSAppSyncClient() {
     auth: {
       type: AUTH_TYPE.API_KEY,
       apiKey,
+
+      // Lambda Authoriser
+      // type: AUTH_TYPE.AWS_LAMBDA,
+      // token: 'token',
     },
     cacheOptions: {},
   });
